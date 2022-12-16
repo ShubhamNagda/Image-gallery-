@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw_09_12_22</title>
+    <style>
+        body {
+            margin: 3%;
+        }
+
+        .content {
+            display: inline-block;
+        }
+
+        .content2 img {
+            display: inline-block;
+            width: 24%;
+            margin: 4%;
+        }
+
+        .detail2 h1,
+        p {
+            text-align: center;
+            display: inline-block;
+            width: 32%;
+        }
+
+        .content img {
+            display: inline-block;
+            width: 24%;
+            margin: 4%;
+        }
+
+        .detail h1,
+        p {
+            text-align: center;
+            display: inline-block;
+            width: 32%;
+        }
+
+        .num {
+            color: blue;
+            text-align: center;
+            font-size: 135%;
+        }
+
+        .num p {
+            text-align: center;
+            display: inline-block;
+            font-size: 135%;
+            color: aqua;
+        }
+
+        .num a:hover {
+            color: aqua;
+        }
+
+        /* .nav {
+            background-color: aqua;
+        } */
+
+        .nav h2 {
+            font-size: 200%;
+            display: inline-block;
+            width: 35%;
+            color: aqua;
+            font-style: italic;
+            margin-left: 3%;
+        }
+
+        .nav h2:hover {
+            color: chocolate;
+            cursor: pointer;
+        }
+
+        .nav h1 {
+            display: inline-block;
+            color: brown;
+            font-style: italic;
+            margin: 1.55%;
+        }
+        .nav img{
+            width: 5%;
+            display: inline-block;
+        }
+        .nav h1:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        form {
+            margin-left: 61%;
+        }
+
+        input:hover {
+            background-color: antiquewhite;
+        }
+
+        .copyright {
+            text-align: center;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <div class="nav">
+        <img src="data:image/jpeg;base64,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">
+        <h2>Shubham Nagda ..</h2>
+        <h1>Home</h1>
+        <h1>About</h1>
+        <h1>Help</h1>
+        <hr>
+
+        <form>
+            <input type="search" placeholder="Search">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <div class="content">
+        <img src="https://www.w3schools.com/w3images/cherries.jpg">
+
+        <img src="https://www.w3schools.com/w3images/steak.jpg">
+
+        <img src="https://www.w3schools.com/w3images/salmon.jpg">
+        <div class="detail">
+            <h1>Heading</h1>
+            <h1>Heading</h1>
+            <h1>Heading</h1>
+        </div>
+        <div class="detail2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+    </div>
+    <div class="content2">
+        <img src="https://www.w3schools.com/w3images/croissant.jpg">
+        <img src="https://www.w3schools.com/w3images/popsicle.jpg">
+        <img src="https://www.w3schools.com/w3images/sandwich.jpg">
+        <div class="detail">
+            <h1>Heading</h1>
+            <h1>Heading</h1>
+            <h1>Heading</h1>
+        </div>
+        <div class="detail2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        </div>
+        <div class="num">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a>....</a>
+            <a href="#">15</a>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>Copyright Resrved &copy;</p>
+            <br>
+        </div>
+        <hr>
+</body>
+
+</html>
